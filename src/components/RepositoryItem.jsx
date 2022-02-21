@@ -3,9 +3,9 @@ import React from 'react'
 export default function RepositoryItem(props) {
   return (
     <li>
-      <strong>{props.repository?.name ?? 'Default'}</strong>
-      <p>{props.repository?.description ?? 'Default'}</p>
-      <a href={props.repository?.link ?? 'Default'}>Acessar repositório</a>
+      <strong>{props.repository?.name ?? 'Nome Indisponível'}</strong>
+      <p>{props.repository?.description ?? 'Descrição Indisponível'}</p>
+      <a href={props.repository?.html_url ?? 'Link Indisponível'}>Acessar repositório</a>
     </li>
   )
 }
