@@ -15,7 +15,7 @@ export default function RepositoryList() {
   useEffect(() => {
     fetch('https://api.github.com/users/rodffer/repos')
       .then(res => res.json())
-      .then(data => console.log(data));
+      .then(data => setRepositories(data));
   }, []);
 9
   return (
