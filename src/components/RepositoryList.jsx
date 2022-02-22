@@ -11,7 +11,7 @@ export default function RepositoryList() {
       .then(res => res.json())
       .then(data => setRepositories(data));
   }, []);
-9
+
   return (
     <section className='repository-list'>
       <h1>Repositórios [rodffer]</h1>
